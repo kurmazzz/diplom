@@ -1,5 +1,6 @@
 @extends ('facades.main')
 
+@section ('content')
 <div class="flex-center position-ref full-height">
     <div class="container">
     </div>
@@ -21,3 +22,4 @@
 
     </div>
 </div>
+@endsection
