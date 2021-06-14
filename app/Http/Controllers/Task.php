@@ -14,9 +14,10 @@ class Task extends Controller
             $title = "Некоректный номер задачи";
             return response()->view('error.404', ['title' => $title]);
         }
+		
         $client = new HttpClient();
         $response = $client->request('GET',
-            'https://mospoly.bitrix24.ru/rest/1252/0d9myrfz4hf3rm6c/tasks.task.get.json?taskId=' . $id,
+            'http://mospoly.bitrix24.ru/rest/1252/0d9myrfz4hf3rm6c/tasks.task.get.json?taskId=' . $id,
             [
                 'timeout' => 2
             ]

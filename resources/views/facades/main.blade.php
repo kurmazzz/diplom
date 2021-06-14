@@ -7,8 +7,6 @@
     <title>Laravel</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="/js/app.js"></script>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
@@ -84,5 +82,8 @@
 </head>
 <body>
 			@yield ('content')
+			
+			
+			<script src="/js/app.js"></script>
 </body>
 </html>
